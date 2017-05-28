@@ -8,49 +8,81 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#455A64">
 
-
-        <TextView
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Batman Trivia" />
+            android:background="#020202">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="center"
+                android:src="@drawable/batlogo" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Batman Trivia"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#455A64"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="1. Who killed Batman's Parents?" />
+                android:background="#000000"
+                android:padding="16dp"
+                android:text="1. Who killed Batman's Parents?"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp" />
 
             <RadioGroup
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Carmine Falcone" />
+                    android:text="Sal Maroni"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carmine Falcone"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sal Maroni" />
+                    android:text="Joe Chill"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Joe Chill" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tony Zucco" />
+                    android:text="Tony Zucco"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
             </RadioGroup>
 
 
@@ -59,37 +91,50 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#455A64"
             android:orientation="vertical">
 
             <RadioGroup
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="2. Which Robin was killed by the Joker" />
+                    android:background="#000000"
+                    android:padding="16dp"
+                    android:textColor="#FFEB3B"
+                    android:textSize="18sp"
+                    android:text="2. Which Robin was killed by the Joker?" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dick Grayson" />
+                    android:text="Dick Grayson"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Jason Todd" />
+                    android:text="Jason Todd"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tim Drake" />
+                    android:text="Tim Drake"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Damien Wayne" />
+                    android:text="Damien Wayne"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
             </RadioGroup>
 
 
@@ -99,12 +144,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#455A64"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:background="#000000"
+                android:padding="16dp"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp"
                 android:text="3. Batman lives in Metropolis?" />
 
             <RadioGroup
@@ -114,12 +164,16 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="True" />
+                    android:text="True"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="False" />
+                    android:text="False"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
 
             </RadioGroup>
 
@@ -129,51 +183,73 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#455A64"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:background="#000000"
+                android:padding="16dp"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp"
                 android:text="4. Which of the following phrases have been used to describe Batman?  Check all that apply." />
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The World's Greatest Detective" />
+                android:text="The World's Greatest Detective"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The Man of Steel" />
+                android:text="The Man of Steel"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The Boy Wonder" />
+                android:text="The Boy Wonder"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The Dark Knight" />
+                android:text="The Dark Knight"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#455A64"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:background="#000000"
+                android:padding="16dp"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp"
                 android:text="5. What is Batman's true identity?" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Answer here" />
+                android:hint="Answer here"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+
+                />
 
         </LinearLayout>
 
@@ -182,7 +258,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Submit" />
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            />
 
     </LinearLayout>
 
