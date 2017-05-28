@@ -52,10 +52,12 @@
                 android:textSize="18sp" />
 
             <RadioGroup
+                android:id="@+id/parent_killer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/marconi_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sal Maroni"
@@ -63,7 +65,7 @@
                     android:textColor="#FFFFFF"/>
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/falcone_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Carmine Falcone"
@@ -71,6 +73,7 @@
                     android:textColor="#FFFFFF"/>
 
                 <RadioButton
+                    android:id="@+id/chill_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Joe Chill"
@@ -78,6 +81,7 @@
                     android:textColor="#FFFFFF"/>
 
                 <RadioButton
+                    android:id="@+id/zucco_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tony Zucco"
@@ -94,21 +98,23 @@
             android:background="#455A64"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="#000000"
+                android:padding="16dp"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp"
+                android:text="2. Which Robin was killed by the Joker?" />
+
             <RadioGroup
+                android:id="@+id/joker_kills_group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:background="#000000"
-                    android:padding="16dp"
-                    android:textColor="#FFEB3B"
-                    android:textSize="18sp"
-                    android:text="2. Which Robin was killed by the Joker?" />
-
                 <RadioButton
+                    android:id="@+id/grayson_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dick Grayson"
@@ -116,6 +122,7 @@
                     android:textColor="#FFFFFF"/>
 
                 <RadioButton
+                    android:id="@+id/todd_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jason Todd"
@@ -123,6 +130,7 @@
                     android:textColor="#FFFFFF"/>
 
                 <RadioButton
+                    android:id="@+id/drake_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tim Drake"
@@ -130,6 +138,7 @@
                     android:textColor="#FFFFFF"/>
 
                 <RadioButton
+                    android:id="@+id/wayne_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Damien Wayne"
@@ -158,10 +167,12 @@
                 android:text="3. Batman lives in Metropolis?" />
 
             <RadioGroup
+                android:id="@+id/batman_city_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/city_true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="True"
@@ -169,6 +180,7 @@
                     android:textColor="#FFFFFF"/>
 
                 <RadioButton
+                    android:id="@+id/city_false"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="False"
@@ -197,6 +209,7 @@
                 android:text="4. Which of the following phrases have been used to describe Batman?  Check all that apply." />
 
             <CheckBox
+                android:id="@+id/greatest_detective"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The World's Greatest Detective"
@@ -204,6 +217,7 @@
                 android:textColor="#FFFFFF"/>
 
             <CheckBox
+                android:id="@+id/man_of_steel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The Man of Steel"
@@ -211,6 +225,7 @@
                 android:textColor="#FFFFFF"/>
 
             <CheckBox
+                android:id="@+id/boy_wonder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The Boy Wonder"
@@ -218,6 +233,7 @@
                 android:textColor="#FFFFFF"/>
 
             <CheckBox
+                android:id="@+id/dark_knight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The Dark Knight"
@@ -243,6 +259,7 @@
                 android:text="5. What is Batman's true identity?" />
 
             <EditText
+                android:id="@+id/batman_identity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Answer here"
